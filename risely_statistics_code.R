@@ -14,15 +14,6 @@ occupancy_abundance_2<- read.csv("C:/Users/Alice_R/Dropbox/Sommer postdoc/Core m
 
 occupancy_abundance_2$host_species<-factor(occupancy_abundance_2$host_species, levels = c("Human", "Meerkat", "Deer", "Carollia","Spinyrat","Mouselemur","Flamingo","Stint"))
 
-
-
-#make variables into proportions
-
-
-occupancy_abundance_2$MeanAbundance<-occupancy_abundance_2$MeanAbundance/100
-occupancy_abundance_2$RelPrev<-occupancy_abundance_2$RelPrev/100
-
-
 head(occupancy_abundance_2)
 
 
