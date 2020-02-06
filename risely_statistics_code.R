@@ -88,7 +88,7 @@ dev.off()
 occupancy_abundance_2$predicted_values_restricted<-as.numeric(fitted(model_restrict))
 
 ggplot(occupancy_abundance_2, aes(x = RelPrev, y = predicted_values_restricted))+
-  geom_point( alpha = 0.5, aes(size = leverage_values, col = high_leverage))+
+  geom_point( alpha = 0.5)+
   facet_wrap(~host_species,  ncol = 4)+
   geom_smooth(method = "lm")+theme_bw()+
   scale_size(range = c(1,5))+
